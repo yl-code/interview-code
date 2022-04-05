@@ -1,3 +1,1 @@
-# leetcode-javascript
-
-leetcode 刷题记录
+## 记录面试过程中的笔试题

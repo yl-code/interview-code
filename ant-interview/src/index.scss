@@ -1,0 +1,152 @@
+html {
+  font-size: 60px;
+}
+
+body {
+  background: #e3e3e3;
+}
+
+.card {
+  box-sizing: border-box;
+  width: 7rem;
+  height: 2rem;
+  background-image: url(https://gw.alipayobjects.com/mdn/rms_7527d7/afts/img/A*HD9_S4RyppUAAAAAAAAAAAAAARQnAQ);
+  background-size: 100% auto;
+  background-position: center;
+  background-color: #fdf3f0;
+  margin-bottom: 0.4rem;
+  padding: 0.1rem 0.2rem;
+  display: flex;
+  justify-content: space-between;
+
+  &-left {
+    width: 4.8rem;
+
+    &-title {
+      line-height: 0.36rem;
+      display: flex;
+      align-items: center;
+      margin-bottom: 0.1rem;
+      justify-content: space-between;
+
+      img {
+        height: 0.36rem;
+        width: 0.36rem;
+      }
+
+      span {
+        margin-left: 0.06rem;
+        font-size: 0.24rem;
+        color: black;
+      }
+
+      .title {
+        display: flex;
+      }
+
+      .distanceDesc {
+        font-size: 0.24rem;
+        color: grey;
+      }
+    }
+
+    &-content {
+      display: flex;
+    }
+
+    &-campImg {
+      width: 1.33rem;
+      height: 1.33rem;
+      margin-right: 0.2rem;
+    }
+
+    &-promoLogo {
+      display: flex;
+
+      img {
+        height: 0.3rem;
+        margin-right: 0.06rem;
+      }
+    }
+
+    &-voucherDesc {
+      font-size: 0.24rem;
+      color: black;
+      font-weight: bolder;
+    }
+
+    &-benefitAmount {
+      font-size: 0.32rem;
+      color: red;
+      font-weight: bolder;
+    }
+
+    &-discountDesc {
+      font-size: 0.2rem;
+      color: grey;
+      text-decoration: line-through;
+    }
+
+    &-desc {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+
+  &-right {
+    width: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &-discountDesc {
+      display: flex;
+      font-size: 0.2rem;
+      color: #83530c;
+      background: linear-gradient(to right, #f4c799, #f1a050);
+      padding: 0.02rem 0;
+      line-height: 0.2rem;
+      height: 0.2rem;
+      margin: auto;
+      margin-top: -0.1rem;
+      display: flex;
+      // border-radius: 0.2rem;
+
+      .discount {
+        width: fit-content;
+      }
+
+      .side {
+        width: 0.2rem;
+      }
+    }
+
+    &-btn {
+      margin: auto;
+      width: 1.24rem;
+      height: 0.6rem;
+      font-size: 0.36rem;
+      line-height: 0.6rem;
+      color: white;
+      font-weight: bolder;
+      background: linear-gradient(to right, #e95143, #e83b52);
+      border-radius: 0.3rem;
+      text-align: center;
+      cursor: pointer;
+      user-select: none;
+
+      &.loading,
+      &.countdown {
+        cursor: no-drop;
+        opacity: 0.4;
+      }
+    }
+
+    &-voucherStockNum {
+      font-size: 0.2rem;
+      color: #545353;
+      text-align: center;
+    }
+  }
+}
